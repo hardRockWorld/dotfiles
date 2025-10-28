@@ -1,0 +1,55 @@
+# 🛑 System-generated files
+.DS_Store
+.CFUserTextEncoding
+.Trash/
+.cache
+.android
+.hidpi-disable
+
+# 🔐 Shell and user-specific config files
+.bash_profile
+.zprofile
+.zsh_history
+.zcompdump*
+.zsh_sessions
+.zshenv
+.profile
+.netrc
+.ssh/
+.wget-hsts
+
+# 📁 User folders not typically versioned
+Library/
+Movies/
+Music/
+Pictures/
+Public/
+Sites/
+Downloads/
+
+# ⚙️ App-specific configs from ~/.config
+.config/chezmoi/
+.config/github-copilot/
+.config/iterm2/
+.config/micro/
+.config/OCauxiliaryTools/
+.config/peazip/
+
+# Some home dir .files to be ignored(app-specific)
+.rustup
+.gem
+.cargo
+.lesshst
+.local
+.npm
+.ocat
+.pcloud
+go/
+pCloud*
+
+# 🧹 Optional: ignore all dotfiles except git, shell configs, chezmoi source, nvim, etc
+!.local/share/chezmoi/
+!.local/share/nvim/
+!.gitconfig
+!.zshrc
+!.bashrc
