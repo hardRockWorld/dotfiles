@@ -1,0 +1,12 @@
+tt.*
+.tests
+doc/tags
+debug
+.repro
+foo.*
+*.log
+data
+.config/nvim/swap/
+.config/nvim/undo/
+.config/nvim/backup/
+.config/nvim/plugin/packer_compiled.lua
