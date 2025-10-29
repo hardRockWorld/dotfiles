@@ -34,6 +34,8 @@ Downloads/
 .config/micro/
 .config/OCauxiliaryTools/
 .config/peazip/
+# Don't add this age encryption key to remote repo at all, use pendrive to transfer to other machines
+.config/age/keys.txt
 
 # Some home dir .files to be ignored(app-specific)
 .rustup
