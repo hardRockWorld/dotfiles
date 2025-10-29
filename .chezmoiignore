@@ -49,6 +49,23 @@ Downloads/
 go/
 pCloud*
 
+# For nvim related ignores
+
+# Ignore Neovim plugin lock file
+dot_config/nvim/lazy-lock.json
+dot_config/nvim/lazy/
+
+# Optional: ignore any hidden or temp files if they appear
+dot_config/nvim/.git/
+dot_config/nvim/.cache/
+dot_config/nvim/.netrwhist
+dot_config/nvim/README.md
+dot_config/nvim/LICENSE
+
+# for nvim packer files and folders
+dot_config/nvim/pack/
+dot_config/nvim/plugin/packer_compiled.lua
+
 # 🧹 Optional: ignore all dotfiles except git, shell configs, chezmoi source, nvim, etc
 !.local/share/chezmoi/
 !.local/share/nvim/
