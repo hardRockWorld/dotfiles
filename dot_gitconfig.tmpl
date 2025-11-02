@@ -1,0 +1,31 @@
+[user]
+    name = {{ .name }}
+    {{- if eq .chezmoi.hostname "work-laptop" }}
+    email = {{ (pass "work/email") }}
+    {{- else }}
+    email = {{ (pass "personal/email") }}
+    {{- end }}
+
+    {{- if .signingkey }}
+    signingkey = {{ .signingkey }}
+    {{- end }}
+
+[core]
+    editor = {{ .editor | default "vim" }}
+
+{{- if eq .chezmoi.os "darwin" }}
+[credential]
+    helper = osxkeychain
+{{- else if eq .chezmoi.os "linux" }}
+[credential]
+    helper = libsecret
+{{- else }}
+# Fallback: short-term cache (or use "store" for plaintext)
+[credential]
+    helper = cache --timeout=3600
+{{- end }}
+
+[commit]
+    {{- if .signingkey }}
+    gpgsign = true
+    {{- end }}
