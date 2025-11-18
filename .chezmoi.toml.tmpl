@@ -5,7 +5,7 @@
 {{- $gitUserEmail := promptStringOnce . "gitUserEmail" "What is your git user email?" -}}
 
 [hooks.read-source-state.pre]
-	command = "bash \"{{ .chezmoi.sourceDir }}/.install-password-manager.sh\""
+	command = ".local/share/chezmoi/.install-password-manager.sh"
 
 [data]
     yourName = "{{ $yourName }}"
