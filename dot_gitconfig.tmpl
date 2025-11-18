@@ -1,0 +1,16 @@
+[user]
+    name = "{{ .gitUserName }}"
+    email = "{{ .gitUserEmail }}"
+
+[init]
+    defaultBranch = main
+
+[color]
+    ui = auto
+
+[push]
+    autoSetupRemote = true
+    default = current
+
+[alias]
+    undo = reset --soft HEAD^
